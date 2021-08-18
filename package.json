@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "dev": "concurrently --kill-others-on-fail \"NODE_ENV=development nodemon app.js\" \"npm run start --prefix ./client\"",
-    "build":"cd client && npm run build",
+    "build": "cd client && npm run build",
     "prod": "concurrently --kill-others-on-fail \"npm run build\" \"NODE_ENV=production node app.js\" ",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "seedDev": "NODE_ENV=development node -r dotenv/config ./seeders/seed.js",
@@ -32,7 +32,8 @@
     "mongoose": "^5.12.5",
     "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0",
-    "random-material-color": "^1.0.5"
+    "random-material-color": "^1.0.5",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

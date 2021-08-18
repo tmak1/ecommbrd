@@ -8,6 +8,7 @@ import Routes from './Routes';
 
 import MuiThemeProvider from './MuiThemeProvider';
 import ProductMetaDataContextProvider from './components/shared/contexts/ProductMetaDataContextProvider';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
@@ -15,6 +16,24 @@ function App() {
       <MuiThemeProvider>
         <Router>
           <ProductMetaDataContextProvider>
+            <Helmet>
+              <title>GoShop</title>
+              <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+JP:wght@300&family=Nunito+Sans:wght@300;400&family=Open+Sans&family=PT+Sans&family=Roboto&family=Rubik:wght@800&family=Dancing+Script&display=swap"
+              />
+              <meta
+                name="description"
+                content="Tarik Khan's portfolio - bio, projects & how to get in touch"
+              />
+              <link
+                rel="icon"
+                type="image/png"
+                href="favicon.ico"
+                sizes="16x16"
+              />
+              <meta name="author" content="Tarik Khan" />
+            </Helmet>
             <MainHeader />
             <MainLayout>
               <Routes />
