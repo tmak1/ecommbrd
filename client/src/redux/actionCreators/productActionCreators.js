@@ -25,6 +25,7 @@ import { sendRequest } from '../../helpers';
 
 export const listProducts =
   (searchTerm, rating, page, perPage, filters, sort) => async (dispatch) => {
+    console.log(process.env.REACT_APP_API_URL);
     try {
       dispatch({ type: PRODUCT_LIST_REQUEST });
       const { error, data } = await sendRequest(

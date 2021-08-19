@@ -24,10 +24,3 @@ const initializeFirebase = async (token) => {
 };
 
 export default initializeFirebase;
-
-// const firebaseConfig = {
-//   apiKey: 'secret',
-//   authDomain: '<your-auth-domain>',
-//   databaseURL: 'https://brdecomm-c1d32.firebaseio.com/images',
-//   storageBucket: 'gs://brdecomm-c1d32.appspot.com',
-// };
