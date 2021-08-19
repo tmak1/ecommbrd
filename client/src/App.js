@@ -22,10 +22,7 @@ function App() {
                 rel="stylesheet"
                 href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+JP:wght@300&family=Nunito+Sans:wght@300;400&family=Open+Sans&family=PT+Sans&family=Roboto&family=Rubik:wght@800&family=Dancing+Script&display=swap"
               />
-              <meta
-                name="description"
-                content="Tarik Khan's portfolio - bio, projects & how to get in touch"
-              />
+              <meta name="description" content="An Ecommerce app" />
               <link
                 rel="icon"
                 type="image/png"
